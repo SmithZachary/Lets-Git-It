@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:lets_git_it/screens/home_screen.dart';
+import 'package:lets_git_it/theme.dart';
+import 'package:provider/provider.dart';
 
 void main() {
   runApp(const MyApp());
@@ -10,11 +12,17 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-        title: 'Let\'s Git It',
-        theme: ThemeData(
-          primarySwatch: Colors.blue,
-        ),
-        home: const HomeScreen());
+    return ChangeNotifierProvider(
+      create: (_) => ThemeNotifier(),
+      child: Consumer<ThemeNotifier>(
+        builder: (context, ThemeNotifier notifier, child) {
+          return MaterialApp(
+            title: 'Flutter Theme Provider',
+            theme: notifier.darkTheme ? dark : light,
+            home: const HomeScreen(),
+          );
+        },
+      ),
+    );
   }
 }

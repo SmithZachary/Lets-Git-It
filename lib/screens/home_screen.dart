@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:lets_git_it/colors.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -10,6 +11,7 @@ class HomeScreen extends StatelessWidget {
       body: const Center(
         child: Text(
           'Lets Git It',
+          style: TextStyle(color: AppColors.primary),
         ),
       ),
       drawer: Drawer(
