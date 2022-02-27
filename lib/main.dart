@@ -18,6 +18,8 @@ class MyApp extends StatelessWidget {
         builder: (context, ThemeNotifier notifier, child) {
           return MaterialApp(
             title: 'Flutter Theme Provider',
+
+            ///TODO: Complete color mode selection with icon in app drawer
             theme: notifier.darkTheme ? dark : light,
             home: const HomeScreen(),
           );
