@@ -1,16 +1,13 @@
-# lets_git_it
+# Lets Git It!
 
-A new Flutter project.
+A basic open source project to learn how to submit pull requests, and merge them off of branches. 
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+Clone this project, create your own branch make any changes you want that make sense and go ahead and submit that branch for a Pull Request. 
 
-A few resources to get you started if this is your first Flutter project:
+I will be writing how to how to soon...
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+In the mean time for help DM on twitter @spacemulecode if you have any issues or need any tips.
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+This is a simple skill set but until you do it once or twice it can be difficult.
